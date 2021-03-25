@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+    Weather API from https://openweathermap.org/
+    
+    WEBSITE made by
+    Piotr Grosz
+-->
+
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherWEB</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="loader1">
+    <ul><b>
+        <li style="animation: title 1.75s ease 2;">W </li>
+        <li style="animation: title 1.75s 0.16s ease 2;">E </li>
+        <li style="animation: title 1.75s 0.32s ease 2;">A </li>
+        <li style="animation: title 1.75s 0.48s ease 2;">T </li>
+        <li style="animation: title 1.75s 0.64s ease 2;">H </li>
+        <li style="animation: title 1.75s 0.80s ease 2;">E </li>
+        <li style="animation: title 1.75s 0.96s ease 2;">R </li>
+        </b>
+    </ul>
+</div>
+<div id="loader2"></div>
+<div id="search">
+    
+    <input type="text" id="text" value="warsaw"></input><br>
+    <input type="submit" id="button" onclick="search()" value="Search">
+    <div id="main">
+        <p id="description">l</p>
+        <p id="temp">l</p>
+        <p id="wind">l</p>
+    </div>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
