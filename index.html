@@ -10,37 +10,53 @@
 <head>
     <meta charset="UTF-8">
     <title>WeatherWEB</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/intro.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+
+
 <body>
-    <div id="loader1">
-    <ul><b>
-        <li style="animation: title 1.75s ease 2;">W </li>
-        <li style="animation: title 1.75s 0.16s ease 2;">E </li>
-        <li style="animation: title 1.75s 0.32s ease 2;">A </li>
-        <li style="animation: title 1.75s 0.48s ease 2;">T </li>
-        <li style="animation: title 1.75s 0.64s ease 2;">H </li>
-        <li style="animation: title 1.75s 0.80s ease 2;">E </li>
-        <li style="animation: title 1.75s 0.96s ease 2;">R </li>
+    <!--wrapper-->
+<div class="wrapper" styles="background-image: url('./src/background.jpg')">
+    <!--intro-->
+<div class="intro">
+    <ul class="intro__list">
+        <li class="intro__item" style="animation: title 1.75s ease 2;">W </li>
+        <li class="intro__item" style="animation: title 1.75s 0.16s ease 2;">E </li>
+        <li class="intro__item" style="animation: title 1.75s 0.32s ease 2;">A </li>
+        <li class="intro__item" style="animation: title 1.75s 0.48s ease 2;">T </li>
+        <li class="intro__item" style="animation: title 1.75s 0.64s ease 2;">H </li>
+        <li class="intro__item" style="animation: title 1.75s 0.80s ease 2;">E </li>
+        <li class="intro__item" style="animation: title 1.75s 0.96s ease 2;">R </li>
         </b>
     </ul>
 </div>
-<div id="loader2"></div>
-<div id="search">
+
+    <!--banner-->
+<div class="banner">
+    <form action="" class="banner__search">
+        <input type="text" value="Warsaw" class="banner__text"></input>
+        <input type="button" onclick="weather()" value="Search" class="banner__button">
+    </form>
     
-    <input type="text" id="text" value="warsaw"></input><br>
-    <input type="submit" id="button" onclick="search()" value="Search">
-    <div id="main">
-        <p id="description">l</p>
-        <p id="temp">l</p>
-        <p id="wind">l</p>
+    
+    <div class="banner__info">
+        <div class="banner__icon">
+            fail
+            <!--image-->
+        </div>
+        <p class="banner__desc">fail</p>
+        <p class="banner__temp">fail</p>
+        <p class="banner__wind">fail</p>
     </div>
+</div>
 </div>
 
 
 
-<script src="script.js"></script>
 </body>
 </html>
 
