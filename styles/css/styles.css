@@ -15,6 +15,7 @@ body {
 .wrapper {
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,8 +73,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -96,7 +95,7 @@ body {
 }
 
 .banner__button {
-  height: 30px;
+  height: 40px;
   width: 10%;
   min-width: 50px;
   color: white;
@@ -107,7 +106,7 @@ body {
 }
 
 .banner__text {
-  height: 30px;
+  height: 40px;
   width: 50%;
   min-width: 120px;
   border: 0px solid black;
@@ -120,7 +119,7 @@ body {
 .banner__info {
   width: 70%;
   height: 50%;
-  min-height: 300px;
+  min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,19 +135,20 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10% 0;
 }
 
 @media (min-width: 800px) {
   .banner__info {
     height: 60%;
     width: 50%;
+    padding: 10% 0;
   }
 }
 
 .banner__icon {
   width: 50%;
   height: 50%;
+  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,6 +163,7 @@ body {
 .banner__desc {
   width: 50%;
   height: 50%;
+  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,6 +178,7 @@ body {
 .banner__temp {
   width: 50%;
   height: 50%;
+  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,6 +193,7 @@ body {
 .banner__wind {
   width: 50%;
   height: 50%;
+  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
